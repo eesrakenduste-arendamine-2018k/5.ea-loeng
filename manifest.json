@@ -7,6 +7,13 @@
     "scripts": ["background.js"],
     "persistent": false
   },
+  "content_scripts": [
+    {
+      "matches": ["https://*/*"],
+      "css": ["style.css"],
+      "js": ["script.js"]
+    }
+  ],
   "options_page": "options.html",
   "page_action": {
     "default_popup": "popup.html",
